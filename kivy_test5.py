@@ -10,7 +10,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 class FirstScr(Screen):
     def __init__(self, name='first'):
         super().__init__(name=name) # имя экрана должно передаваться конструктору класса Screen
-        btn = Button(text="Переключиться на другой экран")
+        btn = Button(text="Переключиться на другой экран" )
         btn.on_press = self.next
         self.add_widget(btn) # экран - это виджет, на котором могут создаваться все другие (потомки)
 
